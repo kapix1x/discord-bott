@@ -253,6 +253,8 @@ async def zwolnienie(interaction: discord.Interaction,
 
 
 # Start bota
+import os
+
 if __name__ == "__main__":
     keep_alive()
-    bot.run()
+    bot.run(os.getenv("TOKEN"))
